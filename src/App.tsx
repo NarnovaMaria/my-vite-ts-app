@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import  { getUsers, type User } from './api/users';
 
+
+
+
 const DUMMY_PICTURE = 'https://thumbs.dreamstime.com/b/none-102846161.jpg?w=768';
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
   useEffect(() => {
     loadUserList()
   }, []);
+
+ 
 
   return (
     <>
