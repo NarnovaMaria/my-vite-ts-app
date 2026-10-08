@@ -9,7 +9,7 @@ export interface OrganizationUser {
 
 export const getOrganizationUsers = async (): Promise<OrganizationUser[]> => {
   const response = await apiClient.get<OrganizationUser[]>("/organization_users");
-  return response.data; // ← вот это ключевое
+  return response.data; 
 };
 
 export const getOrganizationUserById = async (id: number): Promise<OrganizationUser> => {
